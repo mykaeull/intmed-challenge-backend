@@ -5,7 +5,13 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
   try {
-    const consultations = await Consultation.find().populate("medico");
+    const consultations = await Consultation.find().populate({
+      path: "medico",
+      populate: {
+        path: "especialidade",
+        model: "Speciality",
+      },
+    });
     res.json(consultations);
   } catch (err) {
     res.status(500).json({ error: err.message });
