@@ -7,9 +7,6 @@ Bem-vindo à minha API! Esta API foi desenvolvida utilizando Node.js e o framewo
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Rotas Disponíveis](#rotas-disponíveis)
-- [Exemplos de Requisição](#exemplos-de-requisição)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
 
 ## Instalação
 
