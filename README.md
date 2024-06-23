@@ -1,4 +1,4 @@
-# Minha API com Node.js e Express
+# Medicar API com Node.js e Express
 
 Bem-vindo à minha API! Esta API foi desenvolvida utilizando Node.js e o framework Express. Abaixo você encontrará instruções para configurar e utilizar a API, bem como uma visão geral das suas funcionalidades.
 
@@ -17,7 +17,7 @@ Para começar a usar a API, siga os passos abaixo:
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    git clone https://github.com/mykaeull/intmed-challenge-backend.git
     ```
 
 2. Navegue até o diretório do projeto:
@@ -34,19 +34,22 @@ Para começar a usar a API, siga os passos abaixo:
 
 5. Inicie o servidor:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## Uso
 
-Após iniciar o servidor, a API estará disponível no endereço `http://localhost:3000` (ou outro configurado). Utilize uma ferramenta como Postman ou cURL para fazer requisições às rotas disponíveis.
+Após iniciar o servidor, a API estará disponível no endereço `http://localhost:3000` (ou `https://medicar-api-15aa6eaeb773.herokuapp.com/`). Utilize uma ferramenta como Postman ou cURL para fazer requisições às rotas disponíveis.
 
 ## Rotas Disponíveis
 
 Aqui está uma lista das principais rotas disponíveis na API:
 
-- **GET /api/items**: Retorna uma lista de itens.
-- **GET /api/items/:id**: Retorna um item específico pelo ID.
-- **POST /api/items**: Cria um novo item.
-- **PUT /api/items/:id**: Atualiza um item existente pelo ID.
-- **DELETE /api/items/:id**: Exclui um item pelo ID.
+- **POST /users/login**: Retorna um token de autenticação para acessar as demais rotas.
+- **POST /users/register**: Cria um novo usuário.
+- **GET /specialities**: Retorna uma lista de especialidades.
+- **GET /doctors**: Retorna uma lista de médicos.
+- **GET /schedules**: Retorna uma lista de agendas.
+- **GET /consultations**: Retorna uma lista de consultas.
+- **POST /consultations**: Cria uma nova consulta.
+- **DELETE /consultations/:id**: Exclui uma consulta pelo ID.
