@@ -36,7 +36,7 @@ Para começar a usar a API, siga os passos abaixo:
 
 ## Uso
 
-Após iniciar o servidor, a API estará disponível no endereço `http://localhost:3000` (ou `https://medicar-api-15aa6eaeb773.herokuapp.com/`). Utilize uma ferramenta como Postman ou cURL para fazer requisições às rotas disponíveis.
+Após iniciar o servidor, a API estará disponível no endereço `http://localhost:5000` (ou `https://medicar-api-15aa6eaeb773.herokuapp.com/`). Utilize uma ferramenta como Postman ou cURL para fazer requisições às rotas disponíveis.
 
 ## Rotas Disponíveis
 
